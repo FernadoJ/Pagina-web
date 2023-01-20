@@ -1,0 +1,235 @@
+body{
+    font-family: 'Josefin Slab', serif;
+}
+
+header{
+    background-color: aqua;
+    padding: 20px 0; 
+}
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 100px;
+}
+nav{
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 18px;
+}
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: blueviolet;
+    text-decoration: underline;
+}
+.contenido{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.contenido li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    border: 3px solid aqua;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.contenido li:hover{
+    border-color: blueviolet;
+}
+.contenido li:active{
+    border-color:black;
+}
+.contenido li:hover h2{
+    font-size: 33px;
+}
+.contenido h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+.contenido-descrito{
+    font-size: 20px;
+}
+.contenido-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+footer{
+    text-align:center;
+    background: url(fondo1.jpeg);
+    padding: 40px;
+}
+.copyright{
+    color: aliceblue;
+    font-size: 15px;
+    margin: 15px;
+}
+form{
+    margin: 40px 0;
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 8px 25px;
+    width: 40%;
+}
+.checkbox{
+    margin: 20px auto;
+}
+.enviar{
+    width: 45%;
+    padding: 12px 0;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(35, 35, 63);
+    background: aqua;
+    border: none;
+    border-radius: 7px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background:dodgerblue;
+    transform: scale(1.2);
+}
+table{
+    margin: 40px 7px;
+}
+thead{
+    background: #555555;
+    color:#ffffff;
+    font-weight: bold;
+}
+th,td{
+    border: 1.5px solid #000000;
+    padding: 7px 12px;
+}
+
+
+/*aqui incia el CSS para la pagina principal*/
+.tecnologia{
+    width: 100%;
+    height: 200px; 
+    display: flex;
+    margin: auto; 
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    text-shadow: 2px 2px 2px blue;    
+}
+.principal{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+.principal p{
+    margin: 0 0 1em;
+    text-align: center;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+.imagen2{
+    width: 90px;
+    float: left;
+    margin: 4px 20px 20px 0;
+}
+.mapa-google{
+    padding: 0 0 3em;
+    text-align: center; 
+    margin: 3px 0 3px;  
+    background: linear-gradient(#fefefe,#888888) 
+}
+.titulo-principal2{
+    font-size: 2em;
+    margin: 0 0 5px;
+    text-align: center;
+    text-shadow: 2px 2px 2px blue;
+}
+.diferentes{
+    padding: 3em 0;
+    background: #888888;
+}
+.mapa-google p{
+    margin: 0 0 3px;
+    text-align: center;
+}
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+    box-shadow: 5px 2px  5px 5px aquamarine ;
+}
+.listas-diferenciales{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+.items{
+    line-height: 1.5;
+}
+.items::before{
+    content: "⚝"
+}
+.items:first-child{
+    font-weight:    bold;
+}
+
+.imagen-diferenciales{
+    width: 50%;
+    transition: 500ms;
+    box-shadow: 12px 12px 45px 20px #000000;
+}
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+}
+.video{
+    width:560px;
+    margin: 1em auto;
+}
+@media screen and (max-width:480px) {
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    
+    .caja, .principal .mapa-google{
+        width: auto;
+    }
+    .listas-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+    
+}
